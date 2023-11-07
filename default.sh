@@ -38,33 +38,6 @@ if [[ ! -e ${model_file} ]]; then
     download ${model_url} ${model_file}
 fi
 
-# v2-1_768-ema-pruned
-model_file=${checkpoints_dir}/v2-1_768-ema-pruned.ckpt
-model_url=https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt
-
-if [[ ! -e ${model_file} ]]; then
-    printf "Downloading Stable Diffusion 2.1...\n"
-    download ${model_url} ${model_file}
-fi
-
-# sd_xl_base_1
-model_file=${checkpoints_dir}/sd_xl_base_1.0.safetensors
-model_url=https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
-
-if [[ ! -e ${model_file} ]]; then
-    printf "Downloading Stable Diffusion XL base...\n"
-    download ${model_url} ${model_file}
-fi
-
-# sd_xl_refiner_1
-model_file=${checkpoints_dir}/sd_xl_refiner_1.0.safetensors
-model_url=https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors
-
-if [[ ! -e ${model_file} ]]; then
-    printf "Downloading Stable Diffusion XL refiner...\n"
-    download ${model_url} ${model_file}
-fi
-
 ## Download controlnet
 
 model_file=${controlnet_dir}/control_canny-fp16.safetensors
