@@ -11,6 +11,7 @@ NODES=(
 
 CHECKPOINT_MODELS=(
         "https://civitai.com/api/download/models/129614"
+        "https://civitai.com/api/download/models/107675"
 )
 
 LORA_MODELS=(
